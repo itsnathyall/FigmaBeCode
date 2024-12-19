@@ -1,0 +1,179 @@
+@font-face {
+    font-family: averta;
+    src: url(fonts/avertademo/AvertaDemoPECuttedDemo-Regular.otf);
+}
+@font-face {
+    font-family: avertabold;
+    src: url(fonts/avertademo/AvertaDemoPE-ExtraBold.otf);
+}
+
+
+*{
+    padding:0px;
+    margin: 0px;
+
+}
+
+
+
+.container {
+    max-width: 2400px;
+    padding: 20px 0px 20px 100px;
+    margin: auto;
+}
+
+
+nav .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+nav .container ul{
+    display: flex;
+    gap: 15px;
+
+}
+
+
+nav .container ul li {
+    list-style: none;
+    padding: 25px;
+}
+
+nav .container ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+.hero .container {
+    display:flex;
+    padding-right: 0px;
+    align-items: center;
+}
+
+.hero .container h1 {
+    font-family: averta;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49.4px;
+}
+
+.hero .container .hero-txt *{
+    margin-bottom: 30px;
+}
+
+.hero .container .hero-txt p{
+    width: 55%;
+    font-family: averta;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: #565656
+}
+
+.hero-img{
+    position:relative;
+}
+
+
+
+.hero .container .hero-img::before{
+    content:'';
+    position:absolute;
+    left: -8%;
+    z-index: -1;
+    height: 290px;
+    width: 290px;
+    background-image: url(img/Ellipse\ 85.png);
+    background-repeat: no-repeat;
+}
+
+.hero .container .hero-img::after {
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -42%;
+    z-index: -1;
+    height: 290px;
+    width: 290px;
+    background-image: url(img/Rectangle\ 23.png);
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1000px;
+    font-family: averta;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.72px;
+    letter-spacing: 6.5%;
+}
+
+
+
+button::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 50%;
+    z-index: -1;
+    height: 154px;
+    width: 404px;
+    background-image: url(img/Dot\ Ornament.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
